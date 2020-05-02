@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>ブラックジャックゲーム</title>
 </head>
-<body>
+<body style="background-image: url(image/ブラックジャック背景.001.jpeg)">
 
 </body>
 </html>
