@@ -9,6 +9,7 @@ class Player {
 	private int bet; //掛け金
 	private int getCash; //ゲームで得た金額
 
+
 //	プレイヤーのコンストラクタ
 	public Player() {
 		cash = 20000; //プレイヤーの手持ち金の初期値は20000
