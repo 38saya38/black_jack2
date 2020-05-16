@@ -13,6 +13,7 @@ class Player {
 	public Player() {
 		cash = 20000; //プレイヤーの手持ち金の初期値は20000;
 		bet = 1000; //プレイヤーの賭け金の初期値は1000;
+		getCash = 0; //ゲームに勝った場合使用
 	}
 
 	public Player(int dealerPoint, int dealerBet) {
