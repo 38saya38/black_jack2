@@ -8,8 +8,26 @@ public class MainGame {
 	    Deck deck = new Deck();
 	    //deck.printAll(); //デバック用
 
-	    Player player = new Player(); //プレイヤーを作成
-	    Player dealer = new Player(0,0); //ディーラーを作成
+	    Player player = new Player(); //プレイヤーを作成し初期値を設定
+	    Player dealer = new Player(0,0); //ディーラーを作成し初期値を設定
+
+
+	    try (Scanner scan = new Scanner(System.in);) {
+	    	while (true) {
+	    	    //プレイヤーは賭け金を設定する
+	    	    System.out.println("賭け金を決めてください");
+		        //キーボードの入力を受け付けて、変数strに代入する
+		        String str = scan.next();
+		        int bet = Integer.parseInt(str);
+
+		        if(1000 < bet && player.) {
+		        	break;
+		        }else if(bet < 1000) {
+		        	System.out.println("賭け金は1000以上からです。入力し直してください");
+		        }
+	    	}
+	    }
+
 
 	    //プレイヤー・ディーラーがカードを2枚引く
 	    player.add(deck.pop());
@@ -26,15 +44,15 @@ public class MainGame {
 	    System.out.println("あなたの現在のポイントは" + player.sumPoint() + "です");
 
 	    //プレイヤーがカードを引くフェーズ
-	    try (Scanner scan = new Scanner(System.in);) {
+	    try (Scanner scan2 = new Scanner(System.in);) {
 	      while (true) {
 	        System.out.println("カードを引きますか？ Yes:y or No:n");
 	        //キーボードの入力を受け付けて、変数strに代入する
-	        String str = scan.next();
+	        String str2 = scan2.next();
 
-	        if ("n".equals(str)) {
+	        if ("n".equals(str2)) {
 	          break;
-	        } else if ("y".equals(str)) {
+	        } else if ("y".equals(str2)) {
 	          //手札に山札から1枚加える
 	          int index = player.add(deck.pop());
 	          System.out.println("あなたの" + (index+1) + "枚目のカードは" + player.get(index) + "です");
@@ -46,7 +64,7 @@ public class MainGame {
 	          }
 	        } else {
 	          System.out.println("あなたの入力は"
-	              + str + "です。y か n を入力してください。");
+	              + str2 + "です。y か n を入力してください。");
 	        }
 	      }
 	    }
