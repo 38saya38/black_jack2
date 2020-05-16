@@ -21,7 +21,7 @@ public class MainGame {
 	    System.out.println("貴方の1枚目のカードは" + player.get(0) + "です");
 	    System.out.println("ディーラーの1枚目のカードは" + dealer.get(0) + "です");
 	    System.out.println("貴方の2枚目のカードは" + player.get(1) + "です");
-	    System.out.println("ディーラーの2枚目のカードは秘密だよ");
+	    System.out.println("ディーラーの2枚目のカードは秘密です");
 
 	    System.out.println("あなたの現在のポイントは" + player.sumPoint() + "です");
 

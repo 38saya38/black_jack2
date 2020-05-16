@@ -1,2 +1,6 @@
 @CHARSET "UTF-8";
 
+p {
+   background-image: url('image/ブラックジャック.001.jpeg');
+   background-size: contain;
+}

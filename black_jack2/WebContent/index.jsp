@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>ブラックジャックゲーム</title>
+<link rel="stylesheet" type="text/css" href="WebContent/css/layout.css">
 </head>
-<body style="background-image: url(image/ブラックジャック背景.001.jpeg)">
+<body>
 
 </body>
 </html>

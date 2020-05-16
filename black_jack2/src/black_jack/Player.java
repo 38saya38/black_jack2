@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Player {
+
+	private int point;
+	private int bet;
+
+
 	  private List<Card> cardList = new ArrayList<>(); //手札
 	  /**
 	   * カード追加
