@@ -20,15 +20,6 @@ public class MainGame {
 				String str = scan.next();
 				int bet = Integer.parseInt(str);
 
-				if (bet < player.nowCash()) {
-					break;
-				} else if (bet < 1000) {
-					System.out.println("賭け金は1000以上からです。入力し直してください");
-				} else {
-					System.out.println("賭け金は" + bet + "になりました");
-				}
-			}
-		}
 
 		//プレイヤー・ディーラーがカードを2枚引く
 		player.add(deck.pop());
