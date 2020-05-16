@@ -11,17 +11,13 @@ class Player {
 
 
 //	プレイヤーのコンストラクタ
-	public Player() {
-		cash = 20000; //プレイヤーの手持ち金の初期値は20000
-		bet = 0; //プレイヤーの賭け金の初期値は0
-		getCash = 0; //獲得金額の初期値は0。ゲームに勝った場合使用
+	public Player(int n) {
+		cash = n; //プレイヤーの手持ち金の初期値は20000
 	}
 
 //	ディーラーのコンストラクタ
-	public Player(int dealerPoint, int dealerBet, int getCash) {
-		cash = dealerPoint; //ディーラーの手持ち金の初期値は0
-		bet = dealerBet; //ディーラーに賭け金は存在しないので0に設定
-		this.getCash = getCash; //ディーラーに獲得金額は存在しないので0に設定し代入
+	public Player() {
+
 	}
 
 	private List<Card> cardList = new ArrayList<>(); //手札

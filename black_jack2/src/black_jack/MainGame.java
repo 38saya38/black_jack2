@@ -9,8 +9,8 @@ public class MainGame {
 		Deck deck = new Deck();
 		//deck.printAll(); //デバック用
 
-		Player player = new Player(); //プレイヤーを作成し初期値を設定
-		Player dealer = new Player(0, 0, 0); //ディーラーを作成し初期値を設定
+		Player player = new Player(20000); //プレイヤーを作成し初期値を設定
+		Player dealer = new Player(); //ディーラーを作成し初期値を設定
 
 //		try (Scanner scan = new Scanner(System.in);) {
 //			while (true) {
