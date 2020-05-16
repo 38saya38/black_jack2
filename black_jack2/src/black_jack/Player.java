@@ -5,8 +5,13 @@ import java.util.List;
 
 class Player {
 
-	private int point;
-	private int bet;
+	private int point; //手持ちのポイント
+	private int bet; //掛け金
+
+	public Player() {
+		point = 20000; //手持ちの初期値は20000;
+		bet = 1000; //賭け金の初期値は1000;
+	}
 
 
 	  private List<Card> cardList = new ArrayList<>(); //手札
@@ -49,4 +54,7 @@ class Player {
 	  boolean isBusted() {
 	    return sumPoint() > 21;
 	  }
+
+
 	}
+
