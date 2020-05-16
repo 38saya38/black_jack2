@@ -14,13 +14,21 @@ public class MainGame {
 
 		System.out.println("現在の手持ちは" + player.nowCash() + "です。賭け金を決めてください");
 
-//		try (Scanner scan = new Scanner(System.in);) {
-//			while (true) {
-//				//プレイヤーは賭け金を設定する
-//				System.out.println("現在の手持ちは" + player.nowCash() + "です。賭け金を決めてください");
-//				//キーボードの入力を受け付けて、変数strに代入する
-//				String str = scan.next();
-//				int bet = Integer.parseInt(str);
+		try (Scanner scan = new Scanner(System.in);) {
+			while (true) {
+			//キーボードの入力を受け付けて、変数strに代入する
+			String str = scan.next();
+				int bet = Integer.parseInt(str);
+
+
+			}
+		}catch(Exception e) {
+			System.out.println("正しく入力し直してください");
+			}
+		System.out.println("賭け金は" + player.nowCash() + "に、手持ち金は" + player.loseCash() +"になりました");
+	}
+
+
 
 
 
