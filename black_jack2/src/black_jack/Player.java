@@ -7,6 +7,7 @@ class Player {
 
 	private int cash; //手持ち金
 	private int bet; //掛け金
+	private int getCash; //ゲームで得た金額
 
 //	プレイヤーのコンストラクタ
 	public Player() {
@@ -84,13 +85,5 @@ class Player {
 		return cash;
 	}
 
-
-	/**
-	 * 現在の手持ち金
-	 */
-
-	/**
-	 * 現在の手持ち金
-	 */
 
 }
