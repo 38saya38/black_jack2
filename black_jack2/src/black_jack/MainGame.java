@@ -20,6 +20,8 @@ public class MainGame {
 				String str = scan.next();
 				int bet = Integer.parseInt(str);
 
+				if
+
 
 		//プレイヤー・ディーラーがカードを2枚引く
 		player.add(deck.pop());

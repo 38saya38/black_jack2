@@ -72,7 +72,20 @@ class Player {
 	 * 現在の手持ち金
 	 */
 	int nowCash() {
+		System.out.println("現在の手持ち金は" + cash + "です");
 		return cash;
 	}
+
+	/**
+	 *
+	 */
+
+	/**
+	 * 現在の手持ち金
+	 */
+
+	/**
+	 * 現在の手持ち金
+	 */
 
 }
