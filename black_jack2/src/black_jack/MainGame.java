@@ -10,7 +10,7 @@ public class MainGame {
 		//deck.printAll(); //デバック用
 
 		Player player = new Player(); //プレイヤーを作成し初期値を設定
-		Player dealer = new Player(0, 0); //ディーラーを作成し初期値を設定
+		Player dealer = new Player(0, 0, 0); //ディーラーを作成し初期値を設定
 
 		try (Scanner scan = new Scanner(System.in);) {
 			while (true) {
