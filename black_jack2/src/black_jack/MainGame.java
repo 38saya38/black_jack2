@@ -12,15 +12,15 @@ public class MainGame {
 		Player player = new Player(); //プレイヤーを作成し初期値を設定
 		Player dealer = new Player(0, 0, 0); //ディーラーを作成し初期値を設定
 
-		try (Scanner scan = new Scanner(System.in);) {
-			while (true) {
-				//プレイヤーは賭け金を設定する
-				System.out.println("賭け金を決めてください");
-				//キーボードの入力を受け付けて、変数strに代入する
-				String str = scan.next();
-				int bet = Integer.parseInt(str);
-
-				if
+//		try (Scanner scan = new Scanner(System.in);) {
+//			while (true) {
+//				//プレイヤーは賭け金を設定する
+//				System.out.println("賭け金を決めてください");
+//				//キーボードの入力を受け付けて、変数strに代入する
+//				String str = scan.next();
+//				int bet = Integer.parseInt(str);
+//
+//				if
 
 
 		//プレイヤー・ディーラーがカードを2枚引く

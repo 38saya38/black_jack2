@@ -19,8 +19,8 @@ class Player {
 //	ディーラーのコンストラクタ
 	public Player(int dealerPoint, int dealerBet, int getCash) {
 		cash = dealerPoint; //ディーラーの手持ち金の初期値は0
-		this.bet = dealerBet; //ディーラーに賭け金は存在しないので0に設定
-		this.getCash = getCash; //ディーラーに獲得金額は存在しないので0に設定
+		bet = dealerBet; //ディーラーに賭け金は存在しないので0に設定
+		this.getCash = getCash; //ディーラーに獲得金額は存在しないので0に設定し代入
 	}
 
 	private List<Card> cardList = new ArrayList<>(); //手札
@@ -81,10 +81,16 @@ class Player {
 	}
 
 	/**
-	 *手持ち金から賭け金を引く
+	 *プレイヤーの手持ち金から賭け金を引く
 	 */
 	int loseCash() {
+		return cash;
+	}
 
+	/**
+	 *ゲームに勝った時、プレイヤーに配当する
+	 */
+	int addCash() {
 		return cash;
 	}
 
