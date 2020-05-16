@@ -41,7 +41,7 @@ public class MainGame {
 		try (Scanner scan2 = new Scanner(System.in);) {
 			while (true) {
 				System.out.println("カードを引きますか？ Yes:y or No:n");
-				//キーボードの入力を受け付けて、変数strに代入する
+				//キーボードの入力を受け付けて、変数str2に代入する
 				String str2 = scan2.next();
 
 				if ("n".equals(str2)) {
