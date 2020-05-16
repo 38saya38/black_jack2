@@ -17,7 +17,6 @@ class Player {
 
 //	ディーラーのコンストラクタ
 	public Player() {
-
 	}
 
 	private List<Card> cardList = new ArrayList<>(); //手札
@@ -73,7 +72,6 @@ class Player {
 	 * 現在の手持ち金を表示
 	 */
 	int nowCash() {
-		System.out.println("現在の手持ち金は" + cash + "です");
 		return cash;
 	}
 
@@ -88,6 +86,7 @@ class Player {
 	 *ゲームに勝った時、プレイヤーに配当する
 	 */
 	int addCash() {
+
 		return cash;
 	}
 
