@@ -9,7 +9,7 @@ public class MainGame {
 	    //deck.printAll(); //デバック用
 
 	    Player player = new Player(); //プレイヤーを作成
-	    Player dealer = new Player(); //ディーラーを作成
+	    Player dealer = new Player(0,0); //ディーラーを作成
 
 	    //プレイヤー・ディーラーがカードを2枚引く
 	    player.add(deck.pop());
