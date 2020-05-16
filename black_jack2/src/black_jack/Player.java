@@ -69,7 +69,7 @@ class Player {
 	}
 
 	/**
-	 * 現在の手持ち金
+	 * 現在の手持ち金を表示
 	 */
 	int nowCash() {
 		System.out.println("現在の手持ち金は" + cash + "です");
@@ -77,8 +77,13 @@ class Player {
 	}
 
 	/**
-	 *
+	 *手持ち金から賭け金を引く
 	 */
+	int loseCash() {
+
+		return cash;
+	}
+
 
 	/**
 	 * 現在の手持ち金
