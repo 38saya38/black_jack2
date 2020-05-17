@@ -14,8 +14,9 @@ public class MainGame {
 
 		System.out.println("現在の手持ちは" + player.nowCash() + "です。賭け金を決めてください");
 
-		try (Scanner scan = new Scanner(System.in);) {
+		try {
 			while (true) {
+				Scanner scan = new Scanner(System.in);
 				//キーボードの入力を受け付けて、変数strに代入する
 				String str = scan.next();
 				int bet = Integer.parseInt(str);
@@ -25,6 +26,7 @@ public class MainGame {
 				} else if (bet > player.nowCash()) {
 					System.out.println("手持ち金以上を賭けることはできません。設定し直してください");
 				}
+
 				System.out.println("賭け金を" + bet + "に設定");
 				int cash = player.nowCash() - bet;
 				System.out.println("手持ち金は" + cash + "になりました");
@@ -32,8 +34,32 @@ public class MainGame {
 			}
 		} catch (Exception e) {
 			System.out.println("正しく入力し直してください");
-		} finally {
 		}
+
+//		try {
+//			while (true) {
+//				Scanner scan = new Scanner(System.in);
+//				//キーボードの入力を受け付けて、変数strに代入する
+//				String str = scan.next();
+//				int bet = Integer.parseInt(str);
+//
+//				if (bet < 1000) {
+//					System.out.println("賭け金は1000以上からです。設定し直してください");
+//				} else if (bet > player.nowCash()) {
+//					System.out.println("手持ち金以上を賭けることはできません。設定し直してください");
+//				}
+//
+//				System.out.println("賭け金を" + bet + "に設定");
+//				int cash = player.nowCash() - bet;
+//				System.out.println("手持ち金は" + cash + "になりました");
+//				break;
+//			}
+//		} catch (Exception e) {
+//			System.out.println("正しく入力し直してください");
+//		}
+//		}finally {
+//
+//		}
 
 			//プレイヤー・ディーラーがカードを2枚引く
 			player.add(deck.pop());
