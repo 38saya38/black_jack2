@@ -79,7 +79,6 @@ class Player {
 	 *プレイヤーの手持ち金から賭け金を引く
 	 */
 	int loseCash() {
-		cash = cash - bet;
 		return cash;
 	}
 
