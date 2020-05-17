@@ -5,12 +5,14 @@ class Card {
   private static final String[] SUITS = {"クラブ","ダイヤ","ハート","スペード"};
 
   private int cardNumber; //1-52
+
   /**
    * @param cardNumber 1-52
    */
   Card(int cardNumber) {
     this.cardNumber = cardNumber;
   }
+
   /**
    * 得点計算用
    * @return 1-10
@@ -18,6 +20,7 @@ class Card {
   int getPoint() {
     return Math.min(getRankIndex() + 1, 10);
   }
+
   /**
    * 数を絵札か数札に変換するメソッド
    * @return 0-12
@@ -25,6 +28,7 @@ class Card {
   private int getRankIndex() {
     return (cardNumber - 1) % 13;
   }
+
   /**数をスートに変換するメソッド
    * @return 0-3
    */
@@ -45,7 +49,6 @@ class Card {
 	    if(num ==11||num == 12||num == 13) {
 	        num = 10;
 	    }
-
 	    return num;
 	}
 }
