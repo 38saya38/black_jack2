@@ -13,6 +13,7 @@ public class MainGame {
 		Player dealer = new Player(); //ディーラーを作成し初期値を設定
 
 		while(1000 < player.nowCash()) {
+
 		System.out.println("現在の手持ちは" + player.nowCash() + "です。賭け金を決めてください");
 
 		try {
@@ -102,7 +103,7 @@ public class MainGame {
 		} else {
 			System.out.println("負けました・・・");
 		}
-	}
 		System.out.println("手持ち金が1000以下になりました。ゲームを終了します");
+	}
 	}
 }

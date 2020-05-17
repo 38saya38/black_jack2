@@ -35,4 +35,17 @@ class Card {
   public String toString() {
     return SUITS[getSuitIndex()] + "の" + RANKS[getRankIndex()];
   }
+
+  /**
+   * トランプの数字を得点計算用のポイントに変換するメソッド
+   * J/Q/Kは10とする
+   * @return 10
+   */
+  private static int toPoint(int num) {
+	    if(num ==11||num == 12||num == 13) {
+	        num = 10;
+	    }
+
+	    return num;
+	}
 }
