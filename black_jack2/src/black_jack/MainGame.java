@@ -59,9 +59,9 @@ public class MainGame {
 				//キーボードの入力を受け付けて、変数str2に代入する
 				String str2 = scan2.next();
 
-				if ("n".equals(str2)) {
+				if ("n".equals(str2)) { //stand処理
 					break;
-				} else if ("y".equals(str2)) {
+				} else if ("y".equals(str2)) {//hit処理
 					//手札に山札から1枚加える
 					int index = player.add(deck.pop());
 					System.out.println("あなたの" + (index + 1) + "枚目のカードは" + player.get(index) + "です");
@@ -90,17 +90,17 @@ public class MainGame {
 				return;
 			}
 		}
-
-		//ポイントを比較する
-		System.out.println("あなたのポイントは" + player.sumPoint() + "です");
-		System.out.println("ディーラーのポイントは" + dealer.sumPoint() + "です");
-
-		if (player.sumPoint() == dealer.sumPoint()) {
-			System.out.println("引き分けです。");
-		} else if (player.sumPoint() > dealer.sumPoint()) {
-			System.out.println("勝ちました！");
-		} else {
-			System.out.println("負けました・・・");
-		}
+//
+//		//ポイントを比較する
+//		System.out.println("あなたのポイントは" + player.sumPoint() + "です");
+//		System.out.println("ディーラーのポイントは" + dealer.sumPoint() + "です");
+//
+//		if (player.sumPoint() == dealer.sumPoint()) {
+//			System.out.println("引き分けです。");
+//		} else if (player.sumPoint() > dealer.sumPoint()) {
+//			System.out.println("勝ちました！");
+//		} else {
+//			System.out.println("負けました・・・");
+//		}
 	}
 }

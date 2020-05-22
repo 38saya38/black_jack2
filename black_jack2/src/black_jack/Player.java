@@ -8,6 +8,7 @@ class Player {
 	private int cash; //手持ち金
 	private int bet; //掛け金
 	private int getCash; //ゲームで得た金額
+	private List<Card> cardList = new ArrayList<>(); //手札
 
 
 //	プレイヤーのコンストラクタ
@@ -18,8 +19,6 @@ class Player {
 //	ディーラーのコンストラクタ
 	public Player() {
 	}
-
-	private List<Card> cardList = new ArrayList<>(); //手札
 
 	/**
 	 * カード追加

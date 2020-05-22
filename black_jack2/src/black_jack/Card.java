@@ -51,4 +51,13 @@ class Card {
 	    }
 	    return num;
 	}
+
+  /**
+   * トランプの数字を得点計算用のポイントに変換するメソッド
+   * J/Q/Kは10とする
+   * @return 10
+   */
+  static Card sprit(int num) {
+
+	}
 }
