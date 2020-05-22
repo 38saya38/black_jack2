@@ -52,23 +52,4 @@ class Card {
 	    return num;
 	}
 
-  /**
-   * プレイヤーの引いた手札が同じ数だった場合
-   * ふた山に分けることができる。betはそれぞれにかかる。
-   * @return
-   */
-  static Card sprit(int num) {
-
-	  return;
-	}
-
-  /**
-   * ディーラーの１枚目の手札がAだった場合、選択できる。賭け金の
-   * 半額をbetし、ディーラーがブラックジャックだった場合
-   * 賭け金が戻ってくる
-   * @return
-   */
-  static Card insurance(int num) {
-	  return;
-	}
 }
