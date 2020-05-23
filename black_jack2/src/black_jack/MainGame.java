@@ -52,16 +52,19 @@ public class MainGame {
 
 		System.out.println("あなたの現在のポイントは" + player.sumPoint() + "です");
 
+
+
+
 		//プレイヤーがカードを引くフェーズ
 		try (Scanner scan2 = new Scanner(System.in);) {
 			while (true) {
-				System.out.println("カードを引きますか？ Yes:y or No:n");
+				System.out.println("次の手を選択してください。\nカードを引く:h\nこの手札で勝負する:s\n降参する:l");
 				//キーボードの入力を受け付けて、変数str2に代入する
 				String str2 = scan2.next();
 
-				if ("n".equals(str2)) { //stand処理
+				if ("s".equals(str2)) { //stand処理
 					break;
-				} else if ("y".equals(str2)) {//hit処理
+				} else if ("h".equals(str2)) {//hit処理
 					//手札に山札から1枚加える
 					int index = player.add(deck.pop());
 					System.out.println("あなたの" + (index + 1) + "枚目のカードは" + player.get(index) + "です");
@@ -70,6 +73,9 @@ public class MainGame {
 					if (player.isBusted()) {
 						System.out.println("残念、バーストしてしまいました。ディーラーの勝ちです。");
 						return;
+					} else if("l".equals(str2)) {//surrender処理
+						Player.surrender();
+						break;
 					}
 				} else {
 					System.out.println("あなたの入力は"

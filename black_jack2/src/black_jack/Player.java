@@ -89,42 +89,42 @@ class Player {
 		return cash;
 	}
 
-	  /**
-	   * プレイヤーの引いた手札が同じ数だった場合
-	   * ふた山に分けることができる。betはそれぞれにかかる。
-	   * @return
-	   */
-	  static Card sprit(int num) {
-
-		  return;
-		}
-
-	  /**
-	   * ディーラーの１枚目の手札がAだった場合、選択できる。賭け金の
-	   * 半額をbetし、ディーラーがブラックジャックだった場合
-	   * 賭け金が戻ってくる
-	   * @return
-	   */
-	  static Card insurance(int num) {
-		  return;
-		}
-
-	  /**
-	   * プレイヤーはカードを１枚だけ引く代わりに
-	   * 賭け金を倍にできる
-	   * @return
-	   */
-	  static Card doubleDown(int num) {
-		  return;
-		}
+//	  /**
+//	   * プレイヤーの引いた手札が同じ数だった場合
+//	   * ふた山に分けることができる。betはそれぞれにかかる。
+//	   * @return
+//	   */
+//	  static Card sprit() {
+//
+//		  return;
+//		}
+//
+//	  /**
+//	   * ディーラーの１枚目の手札がAだった場合、選択できる。賭け金の
+//	   * 半額をbetし、ディーラーがブラックジャックだった場合
+//	   * 賭け金が戻ってくる
+//	   * @return
+//	   */
+//	  static Card insurance() {
+//		  return;
+//		}
+//
+//	  /**
+//	   * プレイヤーはカードを１枚だけ引く代わりに
+//	   * 賭け金を倍にできる
+//	   * @return
+//	   */
+//	  static Card doubleDown() {
+//		  return;
+//		}
 
 	  /**
 	   * プレイヤーに配られた２枚の手札では勝てそうもないと判断した時
 	   * betの半額を回収し、そのゲームを放棄できる
 	   * @return
 	   */
-	  static Card surrender(int num) {
-		  return;
+	  static void surrender() {
+		  System.out.println("降参しました。賭け金の半額が戻ってきます。ディーラーの勝ちです。");
 		}
 
 
