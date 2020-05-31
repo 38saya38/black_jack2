@@ -64,6 +64,8 @@ public class MainGame {
 
 				if ("s".equals(str2)) { //stand処理
 					break;
+				}else if("l".equals(str2)) { //surrender処理
+						Player.surrender();
 				} else if ("h".equals(str2)) {//hit処理
 					//手札に山札から1枚加える
 					int index = player.add(deck.pop());
@@ -73,11 +75,7 @@ public class MainGame {
 					if (player.isBusted()) {
 						System.out.println("残念、バーストしてしまいました。ディーラーの勝ちです。");
 						return;
-					} else if("l".equals(str2)) {//surrender処理
-						Player.surrender();
-						break;
-					}
-				} else {
+					}else {
 					System.out.println("あなたの入力は"
 							+ str2 + "です。y か n を入力してください。");
 				}
@@ -108,5 +106,6 @@ public class MainGame {
 //		} else {
 //			System.out.println("負けました・・・");
 //		}
+	}
 	}
 }

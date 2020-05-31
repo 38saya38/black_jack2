@@ -70,7 +70,7 @@ class Player {
 	/**
 	 * 現在の手持ち金を表示
 	 */
-	int nowCash() {
+	public int nowCash() {
 		return cash;
 	}
 
@@ -124,7 +124,10 @@ class Player {
 	   * @return
 	   */
 	  static void surrender() {
-		  System.out.println("降参しました。賭け金の半額が戻ってきます。ディーラーの勝ちです。");
+		  System.out.println("降参しました。賭け金の半額"+
+
+		  		+ "が戻ってきます。ディーラーの勝ちです。");
+		  System.exit(0);
 		}
 
 
