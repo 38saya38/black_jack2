@@ -124,8 +124,7 @@ class Player {
 	   * @return
 	   */
 	  static void surrender() {
-		  System.out.println("降参しました。賭け金の半額"+
-
+		  System.out.println("降参しました。賭け金の半額"
 		  		+ "が戻ってきます。ディーラーの勝ちです。");
 		  System.exit(0);
 		}
