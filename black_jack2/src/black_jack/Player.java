@@ -91,8 +91,8 @@ class Player {
 	/**
 	 *ゲームに勝った時、プレイヤーに配当する
 	 */
-	int addCash() {
-
+	int addCash(int cash) {
+		int dividend = this.cash;
 		return cash;
 	}
 

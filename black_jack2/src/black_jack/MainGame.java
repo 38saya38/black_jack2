@@ -101,14 +101,14 @@ public class MainGame {
 			System.out.println("あなたのポイントは" + player.sumPoint());
 
 			if (player.sumPoint() == dealer.sumPoint()) {
-				System.out.println("引き分けです。");
+				System.out.println("引き分けです。betが戻ってきます");
+				player.addCash();
 			} else if (player.sumPoint() > dealer.sumPoint()) {
 				System.out.println("あなたの勝ちです！");
 			} else {
 				System.out.println("あなたの負けです・・・");
 			}
 		}
-
 
 	}
 }

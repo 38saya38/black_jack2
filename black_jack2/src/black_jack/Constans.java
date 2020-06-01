@@ -31,7 +31,7 @@ public class Constans {
 	public static final String DEALER_BURST_MASSAGE = "ディーラーがバーストしました。あなたの勝ちです！";
 
 	/**ポイント比較（引き分け）のメッセージ*/
-	public static final String DRAW_MASSAGE = "引き分けです";
+	public static final String DRAW_MASSAGE = "引き分けです。betが戻ってきます";
 
 	/**ポイント比較でプレイヤーが勝利した時のメッセージ*/
 	public static final String WIN_MASSAGE = "あなたの勝ちです！";
