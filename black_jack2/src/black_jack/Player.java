@@ -18,7 +18,33 @@ class Player {
 	private List<Card> cardList = new ArrayList<>(); //手札
 
 
-//	プレイヤーのコンストラクタ
+
+
+    public int getCash() {
+		return cash;
+	}
+
+	public void setCash(int cash) {
+		this.cash = cash;
+	}
+
+	public int getBet() {
+		return bet;
+	}
+
+	public void setBet(int bet) {
+		this.bet = bet;
+	}
+
+	public int getGetCash() {
+		return getCash;
+	}
+
+	public void setGetCash(int getCash) {
+		this.getCash = getCash;
+	}
+
+	//	プレイヤーのコンストラクタ
 	public Player(int n) {
 		cash = n; //プレイヤーの手持ち金の初期値は20000
 	}
@@ -59,7 +85,7 @@ class Player {
 	}
 
 	/** A を持っているか */
-	private boolean hasAce() {
+	public boolean hasAce() {
 		for (Card card : cardList) {
 			if (card.getPoint() == 1)
 				return true;
@@ -72,6 +98,13 @@ class Player {
 	 */
 	boolean isBusted() {
 		return sumPoint() > 21;
+	}
+
+	/**
+	 * 手札を増やしていく
+	 */
+	int drawCard() {
+		return;
 	}
 
 	/**
