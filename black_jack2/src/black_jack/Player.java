@@ -17,9 +17,6 @@ class Player {
 	private int getCash; //ゲームで得た金額
 	private List<Card> cardList = new ArrayList<>(); //手札
 
-
-
-
     public int getCash() {
 		return cash;
 	}
@@ -100,12 +97,16 @@ class Player {
 		return sumPoint() > 21;
 	}
 
-	/**
-	 * 手札を増やしていく
-	 */
-	int drawCard() {
-		return;
-	}
+//	/**
+//	 * 手札を増やしていく
+//	 */
+//	  int drawCard() {
+//			int index = player.add(deck.pop());
+//			System.out.println("あなたの" + (index + 1) + "枚目のカードは" + player.get(index) + "です");
+//			System.out.println("現在の合計は" + player.sumPoint() + "です\n");
+//			System.out.println("次の手を選択してください。\nカードを引く:h\nこの手札で勝負する:s\n降参する:l");
+//		return;
+//	}
 
 	/**
 	 * 現在の手持ち金を表示
@@ -121,13 +122,13 @@ class Player {
 		return cash;
 	}
 
-	/**
-	 *ゲームに勝った時、プレイヤーに配当する
-	 */
-	int addCash(int cash) {
-		int dividend = this.cash;
-		return cash;
-	}
+//	/**
+//	 *ゲームに勝った時、プレイヤーに配当する
+//	 */
+//	public static int addCash(int cash) {
+//		int dividend = this.cash;
+//		return cash;
+//	}
 
 //	  /**
 //	   * プレイヤーの引いた手札が同じ数だった場合
@@ -163,7 +164,7 @@ class Player {
 	   * betの半額を回収し、そのゲームを放棄できる
 	   * @return
 	   */
-	  static void surrender() {
+	  public static void surrender() {
 		  System.out.println("降参しました。賭け金の半額"
 		  		+ "が戻ってきます。ディーラーの勝ちです。");
 		  System.exit(0);
