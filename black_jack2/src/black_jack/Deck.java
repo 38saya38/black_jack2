@@ -1,4 +1,10 @@
 package black_jack;
+/**
+ * 山札のクラス
+ *
+ * @author Saya Tobari
+ *
+ */
 
 import java.util.ArrayList;
 import java.util.Collections;

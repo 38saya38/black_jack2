@@ -1,5 +1,12 @@
 package black_jack;
 
+/**
+ * プレイヤーの動きをまとめたクラス
+ *
+ * @author Saya Tobari
+ *
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
