@@ -8,10 +8,20 @@ public class BlackJackBean {
 	private int bet;
 	/**ゲームで得た金額*/
 	private int getCash;
+	/**プレイヤーが入力した値*/
+	private int number;
 
 
     public int getCash() {
 		return cash;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
 	}
 
 	public void setCash(int cash) {

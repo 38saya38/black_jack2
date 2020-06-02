@@ -8,6 +8,9 @@ public class Dealer extends Player {
 	/**ディーラーのカードリスト */
 	private List<Card> dealerCardList = new ArrayList<>();
 
+	/**ディーラー */
+	private Dealer dealer = new Dealer();
+
 	/**
 	   * カード追加
 	   * @param card

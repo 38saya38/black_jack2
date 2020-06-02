@@ -18,6 +18,17 @@ class Player {
 	private List<Card> cardList = new ArrayList<>();
 
 	/**
+	 * プレイヤー
+	 */
+	private Player player = new Player();
+
+	/**
+	 * プレイヤーの手持ち金、賭け金、配当
+	 */
+	private BlackJackBean playerCash;
+
+
+	/**
 	 * カード追加
 	 * @param card
 	 * @return 最後に追加したindex (0-)
@@ -64,21 +75,16 @@ class Player {
 		return sumPoint() > 21;
 	}
 
-//	/**
-//	 * 手札を増やしていく
-//	 */
-//	  int drawCard() {
-//			int index = player.add(deck.pop());
-//			System.out.println("あなたの" + (index + 1) + "枚目のカードは" + player.get(index) + "です");
-//			System.out.println("現在の合計は" + player.sumPoint() + "です\n");
-//			System.out.println("次の手を選択してください。\nカードを引く:h\nこの手札で勝負する:s\n降参する:l");
-//		return;
-//	}
+	/**
+	 * 手札を増やしていく
+	 */
+
 
 	/**
 	 * 現在の手持ち金を表示
 	 */
 	public int nowCash() {
+		System.out.println("現在の手持ちは" + player.nowCash() + "です。賭け金を決めてください");
 		return cash;
 	}
 

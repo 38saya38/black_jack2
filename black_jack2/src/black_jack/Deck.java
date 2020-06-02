@@ -11,7 +11,10 @@ import java.util.Collections;
 import java.util.List;
 
 class Deck {
-  private List<Card> cardList = new ArrayList<>(52);  //山札
+
+	/** 山札*/
+  private List<Card> cardList = new ArrayList<>(52);
+
 
   Deck() {
     for(int i=1; i<=52; i++) cardList.add(new Card(i));
