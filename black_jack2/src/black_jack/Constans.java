@@ -51,4 +51,7 @@ public class Constans {
     /** プレイヤーの手持ち金が1000以下になりゲームオーバーになった時のメッセージ */
     public static final String GAME_OVER = "手持ち金が最低ベット額を下回りました。ゲームオーバーです。";
 
+    /** 予期せぬエラーになった時のメッセージ */
+    public static final String ERROR_MASSAGE = "予期せぬエラーが発生しました。ゲームを終了します";
+
 }

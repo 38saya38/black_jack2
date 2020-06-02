@@ -2,19 +2,24 @@ package black_jack;
 
 public class MainGame {
 	public static void main(String[] args) {
+		try {
+			System.out.println(Constans.START_MASSAGE);
 
-		System.out.println(Constans.START_MASSAGE);
+			Player player = new Player();
+			Dealer dealer = new Dealer();
 
-		Player player = new Player();
-		Dealer dealer = new Dealer();
+			while (player.isContinue()) {
+				System.out.println(Constans.BET_DECITION_MASSAGE);
+				//deck.printAll();デバック用
+				Deck deck = new Deck();
+				break;
 
-		while (player.isContinue()) {
-			System.out.println(Constans.BET_DECITION_MASSAGE);
-			//deck.printAll();デバック用
-			Deck deck = new Deck();
-
+			}
+			//System.out.println(Constans.GAME_OVER);
+		} catch (Exception e) {
+			System.out.println(Constans.ERROR_MASSAGE);
+			System.exit(0);
 		}
-		System.out.println(Constans.GAME_OVER);
 	}
 }
 
