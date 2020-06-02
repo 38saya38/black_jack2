@@ -12,43 +12,10 @@ import java.util.List;
 
 class Player {
 
-	private int cash; //手持ち金
-	private int bet; //掛け金
-	private int getCash; //ゲームで得た金額
-	private List<Card> cardList = new ArrayList<>(); //手札
-
-    public int getCash() {
-		return cash;
-	}
-
-	public void setCash(int cash) {
-		this.cash = cash;
-	}
-
-	public int getBet() {
-		return bet;
-	}
-
-	public void setBet(int bet) {
-		this.bet = bet;
-	}
-
-	public int getGetCash() {
-		return getCash;
-	}
-
-	public void setGetCash(int getCash) {
-		this.getCash = getCash;
-	}
-
-	//	プレイヤーのコンストラクタ
-	public Player(int n) {
-		cash = n; //プレイヤーの手持ち金の初期値は20000
-	}
-
-//	ディーラーのコンストラクタ
-	public Player() {
-	}
+	/**
+	 * プレイヤーの手札
+	 */
+	private List<Card> cardList = new ArrayList<>();
 
 	/**
 	 * カード追加

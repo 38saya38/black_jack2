@@ -25,7 +25,10 @@ class Deck {
     return cardList.remove(0);
   }
 
-  // シャッフルしたカードを表示
+  /**
+   * シャッフルしたカードを表示
+   * デバック用
+   */
   void printAll() {
     for(Card i : cardList) {
       System.out.println(i);

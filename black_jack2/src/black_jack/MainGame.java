@@ -9,8 +9,8 @@ public class MainGame {
 		Deck deck = new Deck();
 		//deck.printAll(); //デバック用
 
-		Player player = new Player(20000); //プレイヤーを作成し初期値を設定
-		Player dealer = new Player(); //ディーラーを作成し初期値を設定
+		Player player = new Player();
+		Player dealer = new Player();
 
 		System.out.println("現在の手持ちは" + player.nowCash() + "です。賭け金を決めてください");
 

@@ -9,6 +9,9 @@ package black_jack;
 
 public class Constans {
 
+	/**プレイヤーの初期手持ち金額 */
+	public static final int START_CASH = 20000;
+
 	/**ゲーム開始のメッセージ */
 	public static final String START_MASSAGE = "ブラックジャックへようこそ";
 
@@ -38,11 +41,8 @@ public class Constans {
 
 	/** ポイント比較でプレイヤーが負けた時のメッセージ*/
 	public static final String LOSE_MASSAGE = "あなたの負けです・・・";
-	/**  */
-	public static final String _MASSAGE = "";
-	/**  */
-	/**  */
-	/**  */
-	/**  */
+
+    /** 数値以外のものが入っていないかをチェックする正規表現 */
+    public static final String NUMBER_MATCH_CHECK = "^[0-9]+$";
 
 }
