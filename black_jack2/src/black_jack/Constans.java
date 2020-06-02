@@ -30,6 +30,15 @@ public class Constans {
 	/**数値以外が入力された時のエラーメッセージ*/
 	public static final String NOT_NUMBER_MASSAGE = "不当な値が入力されました。正しく入力し直してください";
 
+	/**ディーラーが2枚目のカードを引いた時のメッセージ*/
+	public static final String DEALER_SECOND_CARD_MASSAGE = "ディーラーの2枚目のカードは秘密です";
+
+	/**プレイヤーに次の手を促すメッセージ*/
+	public static final String URGE_MASSAGE = "\n次の手を選択してください。";
+
+	/**プレイヤーがブラックジャックになった時のメッセージ*/
+	public static final String BRACK_JACK_MASSAGE = "ブラックジャック！";
+
 	/** プレイヤーがバーストした時のメッセージ*/
 	public static final String PLAYER_BURST_MASSAGE = "残念、バーストしてしまいました。ディーラーの勝ちです。";
 

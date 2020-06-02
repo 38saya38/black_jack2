@@ -8,6 +8,7 @@ public class Dealer{
 	/**ディーラーのカードリスト */
 	private List<Card> dealerCardList = new ArrayList<>();
 
+
 	/**
 	   * カード追加
 	   * @param card
@@ -17,6 +18,15 @@ public class Dealer{
 	    dealerCardList.add(card);
 	    return dealerCardList.size() - 1;
 	  }
+	  /**
+		 * 最初のディーラーの手札を表示するメソッド
+		 * @param card
+		 *
+		 */
+		void addShow() {
+			System.out.println("ディーラーの1枚目のカードは" + dealerCardList.get(0) + "です");
+			System.out.println(Constans.DEALER_SECOND_CARD_MASSAGE);
+			}
 	  /**
 	   * カード読出
 	   * @param index (0-)
@@ -47,4 +57,5 @@ public class Dealer{
 	  boolean isBusted() {
 	    return sumPoint() > 21;
 	  }
+
 	}

@@ -15,7 +15,12 @@ class Card {
 	/**トランプのスート */
 	public static final String[] SUITS = { "クラブ", "ダイヤ", "ハート", "スペード" };
 
-	private int cardNumber; //1-52
+	 int cardNumber; //1-52
+
+
+	public static String[] getRanks() {
+		return RANKS;
+	}
 
 	/**
 	 * @param cardNumber 1-52
@@ -28,7 +33,7 @@ class Card {
 	 * 得点計算用
 	 * @return 1-10
 	 */
-	int getPoint() {
+	public int getPoint() {
 		return Math.min(getRankIndex() + 1, 10);
 	}
 

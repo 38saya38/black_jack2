@@ -13,9 +13,7 @@ import java.util.Scanner;
 
 class Player {
 
-	/**
-	 * プレイヤーの手札
-	 */
+	/**プレイヤーの手札*/
 	private List<Card> cardList = new ArrayList<>();
 	/**手持ち金*/
 	private int cash;
@@ -25,6 +23,8 @@ class Player {
 	private int getCash;
 	/**プレイヤーが入力した値*/
 	private int number;
+	/**プレイヤーのポイント*/
+	private int point;
 
 	Player(int cash) {
 		this.cash = cash;
@@ -54,26 +54,27 @@ class Player {
 	}
 
 	/**
-	 *最初プレイヤー手札にカードを追加するメソッド。
-	 * @param card
-	 */
-	int playerAdd(Card card) {
-		for(int i = 0; i<=2; i++) {
-			cardList.add(card);
-		}
-
-		return cardList.size() - 1;
-	}
-
-
-	/**
-	 * カード追加
+	 * 最初プレイヤー手札にカードを追加するメソッド。
 	 * @param card
 	 * @return 最後に追加したindex (0-)
 	 */
 	int add(Card card) {
 		cardList.add(card);
 		return cardList.size() - 1;
+	}
+
+	/**
+	 * 最初のプレイヤー手札を表示するメソッド
+	 * @param card
+	 *
+	 */
+	void addShow() {
+		System.out.println("あなたの1枚目のカードは" + cardList.get(0) + "です");
+		System.out.println("あなたの2枚目のカードは" + cardList.get(1) + "です");
+		if(hasAce() && ) {
+			System.out.println("ブラックジャック！");
+
+		}
 	}
 
 	/**
@@ -89,12 +90,13 @@ class Player {
 	 * 現在の合計ポイント
 	 */
 	int sumPoint() {
-		int sum = 0;
+		point = 0;
 		for (Card card : cardList)
-			sum += card.getPoint();
-		if (hasAce() && sum + 10 <= 21)
-			sum += 10;
-		return sum;
+			point += card.getPoint();
+		if (hasAce() && point + 10 <= 21)
+			point += 10;
+		System.out.println("あなたの現在のポイントは" + point + "です");
+		return point;
 	}
 
 	/** A を持っているか */
@@ -114,8 +116,21 @@ class Player {
 	}
 
 	/**
-	 * 手札を増やしていく
+	 * 次の手を指定するためのメソッド
 	 */
+	void selectHand() {
+		System.out.println(Constans.URGE_MASSAGE);
+		Scanner scan = new Scanner(System.in);
+		String str = scan.nextLine();
+		int select = Integer.parseInt(str);
+		while(select != 1) {
+
+
+
+		}
+
+
+	}
 
 	/**
 	 *プレイヤーの手持ち金が1000以下になっていないか判定するメソッド

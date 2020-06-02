@@ -10,9 +10,22 @@ public class MainGame {
 
 			while (player.isContinue()) {
 				player.betInput();
-				Deck deck = new Deck(); //deck.printAll();デバック用
+				Deck deck = new Deck();
 
-				player.playerAdd(deck.pop());
+				player.add(deck.pop()); //プレイヤーが1枚目のカードを引く
+				player.add(deck.pop()); //プレイヤーが2枚目のカードを引く
+				dealer.add(deck.pop()); //ディーラーが1枚目のカードを引く
+				dealer.add(deck.pop()); //ディーラーが2枚目のカードを引く
+
+				player.addShow();
+				dealer.addShow();
+				player.sumPoint();
+
+				player.selectHand();
+
+
+
+
 
 
 
