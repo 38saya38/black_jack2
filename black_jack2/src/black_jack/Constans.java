@@ -16,13 +16,13 @@ public class Constans {
 	public static final int START_CASH = 20000;
 
 	/**ゲーム開始のメッセージ */
-	public static final String START_MASSAGE = "ブラックジャックへようこそ";
+	public static final String START_MASSAGE = "ブラックジャックへようこそ٩( 'ω' )و\n";
 
 	/**賭け金を決めるためのメッセージ*/
 	public static final String BET_DECITION_MASSAGE = "賭け金を決めてください";
 
 	/** 賭け金が1000以下だった場合のエラーメッセージ*/
-	public static final String NOT_ENOUGH_MASSAGE = "賭け金は1000以上からです。設定し直してください";
+	public static final String NOT_1000OVER_MASSAGE = "賭け金は1000以上からです。設定し直してください";
 
 	/**手持ち金以上をかけようとした時のエラーメッセージ*/
 	public static final String OVER_BET_MASSAGE = "手持ち金以上を賭けることはできません。設定し直してください";

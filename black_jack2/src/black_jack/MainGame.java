@@ -5,13 +5,17 @@ public class MainGame {
 		try {
 			System.out.println(Constans.START_MASSAGE);
 
-			Player player = new Player();
+			Player player = new Player(Constans.START_CASH);
 			Dealer dealer = new Dealer();
 
 			while (player.isContinue()) {
-				System.out.println(Constans.BET_DECITION_MASSAGE);
-				//deck.printAll();デバック用
-				Deck deck = new Deck();
+				player.betInput();
+				Deck deck = new Deck(); //deck.printAll();デバック用
+
+				player.playerAdd(deck.pop());
+
+
+
 				break;
 
 			}
