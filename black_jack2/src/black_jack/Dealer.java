@@ -3,13 +3,10 @@ package black_jack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dealer extends Player {
+public class Dealer{
 
 	/**ディーラーのカードリスト */
 	private List<Card> dealerCardList = new ArrayList<>();
-
-	/**ディーラー */
-	private Dealer dealer = new Dealer();
 
 	/**
 	   * カード追加

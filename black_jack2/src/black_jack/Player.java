@@ -16,16 +16,15 @@ class Player {
 	 * プレイヤーの手札
 	 */
 	private List<Card> cardList = new ArrayList<>();
+	/**手持ち金*/
+	private int cash;
+	/**掛け金 */
+	private int bet;
+	/**ゲームで得た金額*/
+	private int getCash;
+	/**プレイヤーが入力した値*/
+	private int number;
 
-	/**
-	 * プレイヤー
-	 */
-	private Player player = new Player();
-
-	/**
-	 * プレイヤーの手持ち金、賭け金、配当
-	 */
-	private BlackJackBean playerCash;
 
 
 	/**
@@ -81,19 +80,13 @@ class Player {
 
 
 	/**
-	 * 現在の手持ち金を表示
+	 *プレイヤーの手持ち金が1000以下になっていないか判定するメソッド
 	 */
-	public int nowCash() {
-		System.out.println("現在の手持ちは" + player.nowCash() + "です。賭け金を決めてください");
-		return cash;
+	boolean isContinue() {
+		return  cash < 1000;
 	}
 
-	/**
-	 *プレイヤーの手持ち金から賭け金を引く
-	 */
-	int loseCash() {
-		return cash;
-	}
+
 
 //	/**
 //	 *ゲームに勝った時、プレイヤーに配当する

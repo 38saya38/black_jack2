@@ -48,4 +48,7 @@ public class Constans {
     /** 数値以外のものが入っていないかをチェックする正規表現 */
     public static final String NUMBER_MATCH_CHECK = "^[0-9]+$";
 
+    /** プレイヤーの手持ち金が1000以下になりゲームオーバーになった時のメッセージ */
+    public static final String GAME_OVER = "手持ち金が最低ベット額を下回りました。ゲームオーバーです。";
+
 }
