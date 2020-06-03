@@ -71,11 +71,7 @@ class Player {
 	void addShow() {
 		System.out.println("あなたの1枚目のカードは" + cardList.get(0) + "です");
 		System.out.println("あなたの2枚目のカードは" + cardList.get(1) + "です");
-		if(hasAce() && ) {
-			System.out.println("ブラックジャック！");
-
 		}
-	}
 
 	/**
 	 * カード読出
@@ -95,7 +91,6 @@ class Player {
 			point += card.getPoint();
 		if (hasAce() && point + 10 <= 21)
 			point += 10;
-		System.out.println("あなたの現在のポイントは" + point + "です");
 		return point;
 	}
 
@@ -119,18 +114,19 @@ class Player {
 	 * 次の手を指定するためのメソッド
 	 */
 	void selectHand() {
+		System.out.println("あなたの現在のポイントは" + point + "です");
 		System.out.println(Constans.URGE_MASSAGE);
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 		int select = Integer.parseInt(str);
 		while(select != 1) {
 
-
-
+		}
+		return ;
 		}
 
 
-	}
+
 
 	/**
 	 *プレイヤーの手持ち金が1000以下になっていないか判定するメソッド

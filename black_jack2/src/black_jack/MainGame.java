@@ -19,17 +19,21 @@ public class MainGame {
 
 				player.addShow();
 				dealer.addShow();
-				player.sumPoint();
-
-				player.selectHand();
-
-
-
-
+				if(player.sumPoint() == 21){
+					System.out.println(Constans.BRACK_JACK_MASSAGE);
+				}else{
+					player.selectHand();
+				}
 
 
 
-				break;
+
+
+
+
+
+
+
 
 			}
 			//System.out.println(Constans.GAME_OVER);

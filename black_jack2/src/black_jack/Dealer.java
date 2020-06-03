@@ -26,6 +26,7 @@ public class Dealer{
 		void addShow() {
 			System.out.println("ディーラーの1枚目のカードは" + dealerCardList.get(0) + "です");
 			System.out.println(Constans.DEALER_SECOND_CARD_MASSAGE);
+			return;
 			}
 	  /**
 	   * カード読出

@@ -36,8 +36,8 @@ public class Constans {
 	/**プレイヤーに次の手を促すメッセージ*/
 	public static final String URGE_MASSAGE = "\n次の手を選択してください。";
 
-	/**プレイヤーがブラックジャックになった時のメッセージ*/
-	public static final String BRACK_JACK_MASSAGE = "ブラックジャック！";
+	/**プレイヤーが最初の2枚でブラックジャックになった時のメッセージ*/
+	public static final String BRACK_JACK_MASSAGE = "\nプレイヤー、ブラックジャック！";
 
 	/** プレイヤーがバーストした時のメッセージ*/
 	public static final String PLAYER_BURST_MASSAGE = "残念、バーストしてしまいました。ディーラーの勝ちです。";
@@ -47,6 +47,9 @@ public class Constans {
 
 	/**ポイント比較（引き分け）のメッセージ*/
 	public static final String DRAW_MASSAGE = "引き分けです。betが戻ってきます";
+
+	/**プレイヤーがカードを１枚引くときのメッセージ*/
+	public static final String DRAW_CARD_MASSAGE = "カードを1枚引きます";
 
 	/**ポイント比較でプレイヤーが勝利した時のメッセージ*/
 	public static final String WIN_MASSAGE = "あなたの勝ちです！";
