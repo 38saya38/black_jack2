@@ -24,8 +24,7 @@ public class MainGame {
 					break;
 				}else{
 					player.selectHand();
-
-
+					if()
 				}
 
 			}

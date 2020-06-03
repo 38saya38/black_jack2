@@ -51,6 +51,12 @@ public class Constans {
 	/**プレイヤーがカードを１枚引くときのメッセージ*/
 	public static final String DRAW_CARD_MASSAGE = "カードを1枚引きます";
 
+	/**プレイヤーがスプリットを選択したメッセージ*/
+	public static final String SPRIT_MASSAGE = "手札を2つに分け、それぞれにbetをかけます";
+
+	/**プレイヤーがスプリットを選択したメッセージ*/
+	public static final String STAND_MASSAGE = "このカードで勝負します";
+
 	/**ポイント比較でプレイヤーが勝利した時のメッセージ*/
 	public static final String WIN_MASSAGE = "あなたの勝ちです！";
 

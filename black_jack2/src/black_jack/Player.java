@@ -15,10 +15,14 @@ class Player {
 
 	/**プレイヤーの手札*/
 	private List<Card> cardList = new ArrayList<>();
+	/**スプリットで使うプレイヤーの手札*/
+	private List<Card> spritCardList = new ArrayList<>();
 	/**手持ち金*/
 	private int cash;
 	/**掛け金 */
 	private int bet;
+	/**スプリットで使う掛け金 */
+	private int spritBet;
 	/**ゲームで得た配当*/
 	private int getCash;
 	/**プレイヤーが入力した値*/
@@ -63,6 +67,17 @@ class Player {
 		System.out.println(Constans.DRAW_CARD_MASSAGE);
 		cardList.add(card);
 		return cardList.size() - 1;
+	}
+
+	/**
+	 * 最初プレイヤー手札にカードを追加するメソッド。
+	 * @param card
+	 * @return 最後に追加したindex (0-)
+	 */
+	int spritAdd(Card card) {
+		System.out.println(Constans.DRAW_CARD_MASSAGE);
+		spritCardList.add(card);
+		return spritCardList.size() - 1;
 	}
 
 	/**
@@ -120,7 +135,7 @@ class Player {
 		System.out.println(Constans.URGE_MASSAGE);
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
-		 select = Integer.parseInt(str);
+		select = Integer.parseInt(str);
 		return select;
 	}
 
@@ -131,41 +146,37 @@ class Player {
 		return cash > 1000;
 	}
 
-	//	/**
-	//	 *ゲームに勝った時、プレイヤーに配当する
-	//	 */
-	//	public static int addCash(int cash) {
-	//		int dividend = this.cash;
-	//		return cash;
-	//	}
+	/**
+	 * プレイヤーの引いた手札が同じ数だった場合
+	 * ふた山に分けることができる。betはそれぞれにかかる。
+	 * @return
+	 */
+	void sprit() {
+		spritBet = bet;
+		cash = cash - spritBet;
+		System.out.println(Constans.SPRIT_MASSAGE + "\n betは2つ合わせて"
+				+ (bet + spritBet) + "になりました。");
+		return;
+	}
 
-	//	  /**
-	//	   * プレイヤーの引いた手札が同じ数だった場合
-	//	   * ふた山に分けることができる。betはそれぞれにかかる。
-	//	   * @return
-	//	   */
-	//	  static Card sprit() {
-	//
-	//		  return;
-	//		}
-	//
-	//	  /**
-	//	   * ディーラーの１枚目の手札がAだった場合、選択できる。賭け金の
-	//	   * 半額をbetし、ディーラーがブラックジャックだった場合
-	//	   * 賭け金が戻ってくる
-	//	   * @return
-	//	   */
-	//	  static Card insurance() {
-	//		  return;
-	//		}
-	//
+	/**
+	 * ディーラーの１枚目の手札がAだった場合、選択できる。賭け金の
+	 * 半額をbetし、ディーラーがブラックジャックだった場合
+	 * 賭け金が戻ってくる
+	 * @return
+	 */
+	void insurance() {
+		bet = bet / 2;
+		return;
+	}
+
 	/**
 	 * add(); でカードを1枚だけ引く代わりに
 	 * 配当を倍にできる
 	 * @return
 	 */
 	void doubleDown() {
-		getCash = bet*3;
+		getCash = bet * 3;
 	}
 
 	/**
