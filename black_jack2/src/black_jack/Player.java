@@ -19,10 +19,10 @@ class Player {
 	private int cash;
 	/**掛け金 */
 	private int bet;
-	/**ゲームで得た金額*/
+	/**ゲームで得た配当*/
 	private int getCash;
 	/**プレイヤーが入力した値*/
-	private int number;
+	private int select;
 	/**プレイヤーのポイント*/
 	private int point;
 
@@ -48,6 +48,7 @@ class Player {
 				System.out.println("\n賭け金を" + bet + "に設定");
 				int cash = this.cash - bet;
 				System.out.println("手持ち金は" + cash + "になりました\n");
+				this.bet = bet;
 				break;
 			}
 		}
@@ -72,7 +73,7 @@ class Player {
 	void addShow() {
 		System.out.println("あなたの1枚目のカードは" + cardList.get(0) + "です");
 		System.out.println("あなたの2枚目のカードは" + cardList.get(1) + "です");
-		}
+	}
 
 	/**
 	 * カード読出
@@ -119,9 +120,9 @@ class Player {
 		System.out.println(Constans.URGE_MASSAGE);
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
-		int select = Integer.parseInt(str);
+		 select = Integer.parseInt(str);
 		return select;
-		}
+	}
 
 	/**
 	 *プレイヤーの手持ち金が1000以下になっていないか判定するメソッド
@@ -129,15 +130,6 @@ class Player {
 	boolean isContinue() {
 		return cash > 1000;
 	}
-
-	/**
-	 *カードを山札から1枚引くメソッド
-	 */
-	void hit() {
-
-	}
-
-
 
 	//	/**
 	//	 *ゲームに勝った時、プレイヤーに配当する
@@ -167,23 +159,23 @@ class Player {
 	//		  return;
 	//		}
 	//
-	//	  /**
-	//	   * プレイヤーはカードを１枚だけ引く代わりに
-	//	   * 賭け金を倍にできる
-	//	   * @return
-	//	   */
-	//	  static Card doubleDown() {
-	//		  return;
-	//		}
+	/**
+	 * add(); でカードを1枚だけ引く代わりに
+	 * 配当を倍にできる
+	 * @return
+	 */
+	void doubleDown() {
+		getCash = bet*3;
+	}
 
 	/**
 	 * プレイヤーに配られた２枚の手札では勝てそうもないと判断した時
 	 * betの半額を回収し、そのゲームを放棄できる
 	 * @return
 	 */
-	public static void surrender() {
-		System.out.println("降参しました。賭け金の半額"
-				+ "が戻ってきます。ディーラーの勝ちです。");
+	void surrender() {
+		System.out.println("降参しました。賭け金の半分" + (bet / 2) + "が戻ってきます。ディーラーの勝ちです。");
+		cash = bet / 2;
 		System.exit(0);
 	}
 

@@ -24,10 +24,8 @@ public class MainGame {
 					break;
 				}else{
 					player.selectHand();
-					int select = player.selectHand();
-					switch(select) {
 
-					}
+
 				}
 
 			}
