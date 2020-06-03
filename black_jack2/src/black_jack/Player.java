@@ -59,6 +59,7 @@ class Player {
 	 * @return 最後に追加したindex (0-)
 	 */
 	int add(Card card) {
+		System.out.println(Constans.DRAW_CARD_MASSAGE);
 		cardList.add(card);
 		return cardList.size() - 1;
 	}
@@ -113,20 +114,14 @@ class Player {
 	/**
 	 * 次の手を指定するためのメソッド
 	 */
-	void selectHand() {
-		System.out.println("あなたの現在のポイントは" + point + "です");
+	int selectHand() {
+		System.out.println("\nあなたの現在のポイントは" + point + "です");
 		System.out.println(Constans.URGE_MASSAGE);
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 		int select = Integer.parseInt(str);
-		while(select != 1) {
-
+		return select;
 		}
-		return ;
-		}
-
-
-
 
 	/**
 	 *プレイヤーの手持ち金が1000以下になっていないか判定するメソッド
@@ -134,6 +129,15 @@ class Player {
 	boolean isContinue() {
 		return cash > 1000;
 	}
+
+	/**
+	 *カードを山札から1枚引くメソッド
+	 */
+	void hit() {
+
+	}
+
+
 
 	//	/**
 	//	 *ゲームに勝った時、プレイヤーに配当する

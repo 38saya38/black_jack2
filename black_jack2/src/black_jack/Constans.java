@@ -31,10 +31,10 @@ public class Constans {
 	public static final String NOT_NUMBER_MASSAGE = "不当な値が入力されました。正しく入力し直してください";
 
 	/**ディーラーが2枚目のカードを引いた時のメッセージ*/
-	public static final String DEALER_SECOND_CARD_MASSAGE = "ディーラーの2枚目のカードは秘密です";
+	public static final String DEALER_SECOND_CARD_MASSAGE = "ディーラーの2枚目のカードは秘密";
 
 	/**プレイヤーに次の手を促すメッセージ*/
-	public static final String URGE_MASSAGE = "\n次の手を選択してください。";
+	public static final String URGE_MASSAGE = "次の手を選択してください。";
 
 	/**プレイヤーが最初の2枚でブラックジャックになった時のメッセージ*/
 	public static final String BRACK_JACK_MASSAGE = "\nプレイヤー、ブラックジャック！";
