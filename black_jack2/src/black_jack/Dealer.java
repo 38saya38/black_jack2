@@ -28,6 +28,7 @@ public class Dealer{
 			System.out.println(Constans.DEALER_SECOND_CARD_MASSAGE);
 			return;
 			}
+
 	  /**
 	   * カード読出
 	   * @param index (0-)

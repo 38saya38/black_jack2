@@ -24,6 +24,10 @@ public class MainGame {
 					break;
 				}else{
 					player.selectHand();
+					if(dealer.hasAce()) {
+						System.out.println(Constans.INSURANCE_MASSAGE);
+						player.insurance();
+					}
 					if()
 				}
 

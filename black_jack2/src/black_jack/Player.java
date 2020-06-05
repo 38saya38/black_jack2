@@ -152,6 +152,7 @@ class Player {
 	 * @return
 	 */
 	void sprit() {
+
 		spritBet = bet;
 		cash = cash - spritBet;
 		System.out.println(Constans.SPRIT_MASSAGE + "\n betは2つ合わせて"
@@ -167,6 +168,7 @@ class Player {
 	 */
 	void insurance() {
 		bet = bet / 2;
+
 		return;
 	}
 
