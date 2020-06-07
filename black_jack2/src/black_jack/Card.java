@@ -58,4 +58,6 @@ class Card {
 	public String toString() {
 		return SUITS[getSuitIndex()] + "の" + RANKS[getRankIndex()];
 	}
+
+
 }

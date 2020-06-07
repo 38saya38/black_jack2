@@ -19,32 +19,15 @@ public class MainGame {
 
 				player.addShow();
 				dealer.addShow();
-				if(player.sumPoint() == 21){
+				if (player.sumPoint() == 21) {
 					System.out.println(Constans.BRACK_JACK_MASSAGE);
 					break;
-				}else{
+				} else {
 					player.selectHand();
-//					if() {
-//						System.out.println(Constans.INSURANCE_MASSAGE);
-//						player.insurance();
-//					}if() {
-//						System.out.println(Constans.SPRITNO_MASSAGE);
-//						player.sprit();
-//					}if() {
-//
-//					}if() {
-//						System.out.println(Constans.DOUBLE_DOWN_MASSAGE);
-//						player.doubleDown();
-//
-//					}
-					System.out.println(Constans.HIT_MASSAGE);
-					System.out.println(Constans.STAND_MASSAGE);
-
 					break;
 				}
 
 			}
-			//System.out.println(Constans.GAME_OVER);
 		} catch (Exception e) {
 			System.out.println(Constans.ERROR_MASSAGE);
 			System.exit(0);

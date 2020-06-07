@@ -120,8 +120,6 @@ class Player {
 		return false;
 	}
 
-
-
 	/**
 	 * 手札がバーストしているか
 	 */
@@ -129,13 +127,13 @@ class Player {
 		return sumPoint() > 21;
 	}
 
-	/**
-	 * 手札が2枚とも同じ数pointか
-	 */
-	boolean isSame() {
-
-
-	}
+	//	/**
+	//	 * 手札が2枚とも同じ数pointか
+	//	 */
+	//	boolean isSame() {
+	//
+	//
+	//	}
 
 	/**
 	 * 次の手を指定するためのメソッド
@@ -143,9 +141,20 @@ class Player {
 	int selectHand() {
 		System.out.println("\nあなたの現在のポイントは" + point + "です");
 		System.out.println(Constans.URGE_MASSAGE);
-		Scanner scan = new Scanner(System.in);
-		String str = scan.nextLine();
-		select = Integer.parseInt(str);
+		try {
+			System.out.println(Constans.HIT_MASSAGE);
+			System.out.println(Constans.STAND_MASSAGE);
+			System.out.println(Constans.DOUBLE_DOWN_MASSAGE);
+			System.out.println(Constans.INSURANCE_MASSAGE);
+			System.out.println(Constans.SURRENDER_MASSAGE);
+			Scanner scan = new Scanner(System.in);
+			String str = scan.nextLine();
+			select = Integer.parseInt(str);
+
+		} catch (Exception e) {
+			System.out.println(Constans.ERROR_MASSAGE);
+			System.exit(0);
+		}
 		return select;
 	}
 
@@ -168,7 +177,6 @@ class Player {
 				+ (bet + spritBet) + "になりました。");
 		return;
 	}
-
 
 	/**
 	 * ディーラーの１枚目の手札がAだった場合、選択できる。賭け金の

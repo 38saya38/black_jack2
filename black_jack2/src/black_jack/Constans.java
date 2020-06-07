@@ -34,7 +34,7 @@ public class Constans {
 	public static final String DEALER_SECOND_CARD_MASSAGE = "ディーラーの2枚目のカードは秘密";
 
 	/**プレイヤーに次の手を促すメッセージ*/
-	public static final String URGE_MASSAGE = "次の手を選択してください。";
+	public static final String URGE_MASSAGE = "次の手を選択します。番号を入力してください";
 
 	/**プレイヤーが最初の2枚でブラックジャックになった時のメッセージ*/
 	public static final String BRACK_JACK_MASSAGE = "\nプレイヤー、ブラックジャック！";
@@ -57,11 +57,14 @@ public class Constans {
 	/**hitでプレイヤーがカードを１枚引くときのメッセージ*/
 	public static final String HIT_MASSAGE = "ヒット：カードを1枚引きます";
 
+	/**プレイヤーがサレンダーを選択するときのメッセージ*/
+	public static final String SURRENDER_MASSAGE = "サレンダー：betの半額を回収し、ゲームを放棄できます";
+
 	/**プレイヤーがダブルダウンを選択したときのメッセージ*/
 	public static final String DOUBLE_DOWN_MASSAGE = "ダブルダウン：カードを1枚だけ引き、賭け金を２倍にします";
 
 	/**プレイヤーがスタンドを選択したときのメッセージ*/
-	public static final String STAND_MASSAGE = "このカードで勝負します";
+	public static final String STAND_MASSAGE = "スタンド：このカードで勝負します";
 
 	/**インシュランスを選択するときのメッセージ*/
 	public static final String INSURANCE_MASSAGE = "インシュランス：ディーラーの１枚目の手札がAだった場合、賭け金の半額をbetし、\nディーラーがブラックジャックだった場に賭け金が戻ってきます";
