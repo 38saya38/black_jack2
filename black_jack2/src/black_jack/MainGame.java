@@ -24,11 +24,23 @@ public class MainGame {
 					break;
 				}else{
 					player.selectHand();
-					if(dealer.hasAce()) {
-						System.out.println(Constans.INSURANCE_MASSAGE);
-						player.insurance();
-					}
-					if()
+//					if() {
+//						System.out.println(Constans.INSURANCE_MASSAGE);
+//						player.insurance();
+//					}if() {
+//						System.out.println(Constans.SPRITNO_MASSAGE);
+//						player.sprit();
+//					}if() {
+//
+//					}if() {
+//						System.out.println(Constans.DOUBLE_DOWN_MASSAGE);
+//						player.doubleDown();
+//
+//					}
+					System.out.println(Constans.HIT_MASSAGE);
+					System.out.println(Constans.STAND_MASSAGE);
+
+					break;
 				}
 
 			}

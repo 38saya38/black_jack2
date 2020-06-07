@@ -120,11 +120,21 @@ class Player {
 		return false;
 	}
 
+
+
 	/**
 	 * 手札がバーストしているか
 	 */
 	boolean isBusted() {
 		return sumPoint() > 21;
+	}
+
+	/**
+	 * 手札が2枚とも同じ数pointか
+	 */
+	boolean isSame() {
+
+
 	}
 
 	/**
@@ -152,13 +162,13 @@ class Player {
 	 * @return
 	 */
 	void sprit() {
-
 		spritBet = bet;
 		cash = cash - spritBet;
 		System.out.println(Constans.SPRIT_MASSAGE + "\n betは2つ合わせて"
 				+ (bet + spritBet) + "になりました。");
 		return;
 	}
+
 
 	/**
 	 * ディーラーの１枚目の手札がAだった場合、選択できる。賭け金の
