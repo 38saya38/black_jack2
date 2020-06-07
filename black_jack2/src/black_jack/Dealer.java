@@ -69,15 +69,13 @@ public class Dealer {
 	/**
 	 * インシュランスを表示するためのメソッド
 	 */
-	void Insurance() {
+	void InsuranceShow() {
 		Card first = dealerCardList.get(0);
-		String firstCard =String.valueOf(first);
-		if(firstCard.contains("A")) {
+		String firstCard = String.valueOf(first);
+		if (firstCard.contains("A")) {
 			System.out.println(Constans.INSURANCE_MASSAGE);
 		}else {
 			return;
 		}
-		}
 	}
-
-
+}

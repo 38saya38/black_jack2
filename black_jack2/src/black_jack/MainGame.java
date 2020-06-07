@@ -12,6 +12,7 @@ public class MainGame {
 				player.betInput();
 				Deck deck = new Deck();
 
+				System.out.println(Constans.DRAW_CARD_MASSAGE);
 				player.add(deck.pop()); //プレイヤーが1枚目のカードを引く
 				player.add(deck.pop()); //プレイヤーが2枚目のカードを引く
 				dealer.add(deck.pop()); //ディーラーが1枚目のカードを引く
@@ -23,8 +24,9 @@ public class MainGame {
 					System.out.println(Constans.BRACK_JACK_MASSAGE);
 					break;
 				} else {
+					player.selectHandShow();
+					dealer.InsuranceShow();
 					player.selectHand();
-					dealer.selectInsurance();
 					break;
 				}
 

@@ -48,11 +48,11 @@ public class Constans {
 	/**ポイント比較（引き分け）のメッセージ*/
 	public static final String DRAW_MASSAGE = "引き分けです。betが戻ってきます";
 
-	/**プレイヤーがカードを１枚引くときのメッセージ*/
-	public static final String DRAW_CARD_MASSAGE = "カードを1枚引きます";
+	/**初ターンでプレイヤーがカードを引くときのメッセージ*/
+	public static final String DRAW_CARD_MASSAGE = "カード2枚引きます";
 
 	/**プレイヤーがスプリットを選択したときのメッセージ*/
-	public static final String SPRIT_MASSAGE = "6 手札を2つに分け、それぞれにbetをかけます";
+	public static final String SPRIT_MASSAGE = "6 スプリット：手札を2つに分け、それぞれにbetをかけます";
 
 	/**hitでプレイヤーがカードを１枚引くときのメッセージ*/
 	public static final String HIT_MASSAGE = "1 ヒット：カードを1枚引きます";
