@@ -140,13 +140,13 @@ class Player {
 	 */
 	int selectHand() {
 		System.out.println("\nあなたの現在のポイントは" + point + "です");
-		System.out.println(Constans.URGE_MASSAGE);
 		try {
 			System.out.println(Constans.HIT_MASSAGE);
 			System.out.println(Constans.STAND_MASSAGE);
 			System.out.println(Constans.DOUBLE_DOWN_MASSAGE);
-			System.out.println(Constans.INSURANCE_MASSAGE);
 			System.out.println(Constans.SURRENDER_MASSAGE);
+			System.out.println(Constans.SPRIT_MASSAGE);
+			System.out.println(Constans.URGE_MASSAGE);
 			Scanner scan = new Scanner(System.in);
 			String str = scan.nextLine();
 			select = Integer.parseInt(str);
