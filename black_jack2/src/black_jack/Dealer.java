@@ -74,8 +74,7 @@ public class Dealer {
 		String firstCard = String.valueOf(first);
 		if (firstCard.contains("A")) {
 			System.out.println(Constans.INSURANCE_MASSAGE);
-		}else {
-			return;
 		}
+
 	}
 }

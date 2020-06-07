@@ -26,6 +26,7 @@ public class MainGame {
 				} else {
 					player.selectHandShow();
 					dealer.InsuranceShow();
+
 					player.selectHand();
 					break;
 				}

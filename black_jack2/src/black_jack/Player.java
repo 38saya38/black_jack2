@@ -126,20 +126,12 @@ class Player {
 		return sumPoint() > 21;
 	}
 
-	//	/**
-	//	 * 手札が2枚とも同じ数pointか
-	//	 */
-	//	boolean isSame() {
-	//
-	//
-	//	}
 
 	/**
 	 * 次の手を促すためのメッセージを表示するメソッド
 	 */
 	void selectHandShow() {
-		System.out.println("\nあなたの現在のポイントは" + point + "です");
-			System.out.println(Constans.URGE_MASSAGE);
+		System.out.println("\nあなたの現在のポイントは" + point + "です" + Constans.URGE_MASSAGE);
 			System.out.println(Constans.HIT_MASSAGE);
 			System.out.println(Constans.STAND_MASSAGE);
 			System.out.println(Constans.DOUBLE_DOWN_MASSAGE);
@@ -199,7 +191,7 @@ class Player {
 	}
 
 	/**
-	 * add(); でカードを1枚だけ引く代わりに
+	 * add() でカードを1枚だけ引く代わりに
 	 * 配当を倍にできる
 	 * @return
 	 */
