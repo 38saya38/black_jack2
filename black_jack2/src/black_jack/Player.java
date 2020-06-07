@@ -135,6 +135,7 @@ class Player {
 			System.out.println(Constans.HIT_MASSAGE);
 			System.out.println(Constans.STAND_MASSAGE);
 			System.out.println(Constans.DOUBLE_DOWN_MASSAGE);
+			System.out.println(Constans.SURRENDER_MASSAGE);
 	}
 
 	/**
@@ -175,6 +176,21 @@ class Player {
 		cash = cash - spritBet;
 		System.out.println(Constans.SPRIT_MASSAGE + "\n betは2つ合わせて"
 				+ (bet + spritBet) + "になりました。");
+		return;
+	}
+
+	/**
+	 * スプリットを表示するためのメソッド
+	 * @return
+	 */
+	void spritShow() {
+		Card first = cardList.get(0);
+		Card second = cardList.get(1);
+		int firstPoint = first.getPoint();
+		int secondPoint = second.getPoint();
+		if(firstPoint == secondPoint) {
+		System.out.println(Constans.SPRITNO_MASSAGE);
+		}
 		return;
 	}
 

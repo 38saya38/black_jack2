@@ -75,6 +75,5 @@ public class Dealer {
 		if (firstCard.contains("A")) {
 			System.out.println(Constans.INSURANCE_MASSAGE);
 		}
-
 	}
 }

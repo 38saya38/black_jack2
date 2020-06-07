@@ -52,13 +52,13 @@ public class Constans {
 	public static final String DRAW_CARD_MASSAGE = "カード2枚引きます";
 
 	/**プレイヤーがスプリットを選択したときのメッセージ*/
-	public static final String SPRIT_MASSAGE = "6 スプリット：手札を2つに分け、それぞれにbetをかけます";
+	public static final String SPRIT_MASSAGE = "手札を2つに分け、それぞれにbetをかけます";
 
 	/**hitでプレイヤーがカードを１枚引くときのメッセージ*/
 	public static final String HIT_MASSAGE = "1 ヒット：カードを1枚引きます";
 
 	/**プレイヤーがサレンダーを選択するときのメッセージ*/
-	public static final String SURRENDER_MASSAGE = "5 サレンダー：betの半額を回収し、ゲームを放棄できます";
+	public static final String SURRENDER_MASSAGE = "4 サレンダー：betの半額を回収し、ゲームを放棄できます";
 
 	/**プレイヤーがダブルダウンを選択したときのメッセージ*/
 	public static final String DOUBLE_DOWN_MASSAGE = "3 ダブルダウン：カードを1枚だけ引き、賭け金を２倍にします";
@@ -67,9 +67,9 @@ public class Constans {
 	public static final String STAND_MASSAGE = "2 スタンド：このカードで勝負します";
 
 	/**インシュランスを選択するときのメッセージ*/
-	public static final String INSURANCE_MASSAGE = "4 インシュランス：ディーラーの１枚目の手札がAだった場合、賭け金の半額をbetし、\n  ディーラーがブラックジャックだった場に賭け金が戻ってきます";
+	public static final String INSURANCE_MASSAGE = "5 インシュランス：ディーラーの１枚目の手札がAだった場合、賭け金の半額をbetし、\n  ディーラーがブラックジャックだった場に賭け金が戻ってきます";
 
-	/**インシュランスを選択するときのメッセージ*/
+	/**スプリットを選択するときのメッセージ*/
 	public static final String SPRITNO_MASSAGE = "6 スプリット：最初に引いた手札が同じ数だった場合、ふた山に分けることができます。\nbetはそれぞれにかかります";
 
 	/**ポイント比較でプレイヤーが勝利した時のメッセージ*/
