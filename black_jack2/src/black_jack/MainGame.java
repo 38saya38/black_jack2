@@ -24,11 +24,16 @@ public class MainGame {
 					System.out.println(Constans.BRACK_JACK_MASSAGE);
 					break;
 				} else {
-					player.selectHandShow();
-					dealer.InsuranceShow();
-					player.spritShow();
-					player.selectHand();
-					break;
+					int select = 0;
+					while(select == 2) {
+						player.selectHandShow();
+						dealer.InsuranceShow();
+
+						player.spritShow();
+						player.selectHand();
+						break;
+					}
+
 				}
 
 			}

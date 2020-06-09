@@ -131,7 +131,7 @@ class Player {
 	 * 次の手を促すためのメッセージを表示するメソッド
 	 */
 	void selectHandShow() {
-		System.out.println("\nあなたの現在のポイントは" + point + "です" + Constans.URGE_MASSAGE);
+		System.out.println("\nあなたの現在のポイントは" + point + "です。\n" + Constans.URGE_MASSAGE);
 			System.out.println(Constans.HIT_MASSAGE);
 			System.out.println(Constans.STAND_MASSAGE);
 			System.out.println(Constans.DOUBLE_DOWN_MASSAGE);
